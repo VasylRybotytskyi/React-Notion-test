@@ -2,6 +2,7 @@ import styles from "../UserTable/userTable.module.css";
 import { MdDelete } from "react-icons/md";
 
 const UserTable = ({ usersData, deleteUser }) => {
+  console.log(usersData);
   return (
     <table className={styles.table}>
       <thead>
