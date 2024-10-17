@@ -1,0 +1,29 @@
+.container {
+  width: Fill (1, 440px) px;
+  height: Hug (88px) px;
+  padding: 20px 80px 20px 80px;
+  gap: 20px;
+  /* border: 0px 0px 1px 0px; */
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  opacity: 0px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.button {
+  width: Fixed (1, 440px) px;
+  height: Hug (88px) px;
+  top: -1002px;
+  left: -1030px;
+  padding: 20px 80px 20px 80px;
+  gap: 20px;
+  border: 1px solid rgba(196, 196, 196, 1);
+  opacity: 0px;
+  background: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
