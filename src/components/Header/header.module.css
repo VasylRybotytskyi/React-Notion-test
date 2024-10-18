@@ -1,29 +1,36 @@
 .container {
-  width: Fill (1, 440px) px;
-  height: Hug (88px) px;
-  padding: 20px 80px 20px 80px;
-  gap: 20px;
-  /* border: 0px 0px 1px 0px; */
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
-  opacity: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
 }
 
 .button {
-  width: Fixed (1, 440px) px;
-  height: Hug (88px) px;
-  top: -1002px;
-  left: -1030px;
-  padding: 20px 80px 20px 80px;
-  gap: 20px;
-  border: 1px solid rgba(196, 196, 196, 1);
-  opacity: 0px;
-  background: rgba(255, 255, 255, 1);
   text-decoration: none;
+  font-size: 16px;
+  color: #555;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Стилі для активного посилання */
+.active {
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+/* Стилі для посилання при наведенні мишки */
+.button:hover {
+  background-color: #e2e6ea;
+  color: #007bff;
 }

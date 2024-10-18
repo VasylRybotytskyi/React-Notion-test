@@ -52,8 +52,8 @@ const Filter = ({
   };
 
   return (
-    <div style={{ display: "flex", gap: "10px" }}>
-      {/* Фільтр за департаментами */}
+    <div style={{ display: "flex", gap: "10px", marginBottom: "10px" }}>
+      {/* Фільтр за кв */}
       <Select
         isMulti
         name="departments"

@@ -5,10 +5,21 @@ const Header = () => {
   return (
     <div className={styles.container}>
       <nav className={styles.nav}>
-        <NavLink className={styles.button} to="/">
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? `${styles.button} ${styles.active}` : styles.button
+          }
+          end
+          to="/"
+        >
           Edit Users
         </NavLink>
-        <NavLink className={styles.button} to="/users">
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? `${styles.button} ${styles.active}` : styles.button
+          }
+          to="/users"
+        >
           Users
         </NavLink>
       </nav>
