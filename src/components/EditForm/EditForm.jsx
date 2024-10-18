@@ -29,7 +29,6 @@ const EditForm = ({ selectedUser }) => {
       }}
       enableReinitialize
       onSubmit={(values) => {
-        console.log(values);
         dispatch(updateUser({ id: id, ...values }));
       }}
     >
