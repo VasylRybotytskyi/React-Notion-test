@@ -4,7 +4,7 @@ import departments from "../../data/departments.json";
 import statuses from "../../data/statuses.json";
 import { useDispatch } from "react-redux";
 import { updateUser } from "../../redux/userSlice";
-import styles from "./editForm.module.css"; // Імпорт стилів
+import styles from "./editForm.module.css";
 
 const EditForm = ({ selectedUser }) => {
   const { id, name, department, country, status } = selectedUser;

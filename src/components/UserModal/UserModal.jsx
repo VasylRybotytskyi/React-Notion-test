@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Modal from "react-modal";
 import ModalForm from "../ModalForm/ModalForm";
+import styles from "../UserModal/userModal.module.css";
 
 Modal.setAppElement("#root");
 
@@ -31,7 +32,9 @@ const UserModal = () => {
 
   return (
     <div>
-      <button onClick={openModal}>Add User</button>
+      <button className={styles.button} onClick={openModal}>
+        Add User
+      </button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
